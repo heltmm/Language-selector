@@ -37,9 +37,10 @@
   width: 100%;
   text-align: center;
 }
-body {
-  background-color: #f2e8d5;
-}
+
 #startButton{
   margin: 50px 0 10px 0;
+}
+body{
+  text-align: center;
 }
