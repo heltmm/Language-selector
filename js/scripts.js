@@ -81,7 +81,7 @@ $(document).ready(function() {
   $("#name").submit(function(event){
     event.preventDefault();
     var name = $("#nameInput").val();
-    if (name === ""){
+    if (name === "" || !name.match(/^[a-zA-Z]+$/)){
       alert("Please enter a name!")
       $("#name").show();
       $("#choosingStatement").hide();
