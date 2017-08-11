@@ -16,46 +16,57 @@ $(document).ready(function() {
     event.preventDefault();
     var frontLanguage = $("#frontLanguage").val();
     if (frontLanguage === "design"){
+      $('#css').siblings().hide()
+      $('#css').parents().siblings().hide();
       $("#css").show();
-      $("#javascript").hide();
     }else if (frontLanguage === "interactive"){
-      $("#css").hide();
+      $('#javascript').siblings().hide()
+      $('#javascript').parents().siblings().hide();
       $("#javascript").show();
     }
   });
+
   $("#backSize").change(function(event){
     event.preventDefault();
     var size = $("input:radio[name=size]:checked").val();
     if (size === "small"){
+      $('#ruby').siblings().hide()
+      $('#ruby').parents().siblings().hide();
       $("#ruby").show();
-      $("#backInstitution").hide();
+
 
     }else if (size === "large"){
       $("#backInstitution").show();
-      $("#ruby").hide();
     }
   });
+
   $("#backInstitution").change(function(event){
     event.preventDefault();
     var institution = $("input:radio[name=institution]:checked").val();
     if (institution === "government"){
+      $('#php').siblings().hide()
+      $('#php').parents().siblings().hide();
       $("#php").show();
-      $("#backCorpChoice").hide();
+
 
     }else if (institution === "private"){
       $("#backCorpChoice").show();
-      $("#php").hide();
+
     }
   });
+
   $("#backCorpChoice").change(function(event){
     event.preventDefault();
     var company = $("#backCorp").val();
 
     if (company === "google"){
+      $('#java').siblings().hide()
+      $('#java').parents().siblings().hide();
       $("#java").show();
-      $("#cSharp").hide();
+
     }else if (company === "microsoft"){
-      $("#java").hide();
+      $('#cSharp').siblings().hide()
+      $('#cSharp').parents().siblings().hide();
       $("#cSharp").show();
     }
   });
@@ -66,10 +77,12 @@ $(document).ready(function() {
   $(".clickDrop").click(function(event){
     $("#frontEnd").addClass("animated hinge");
     $("#backEnd").addClass("animated hinge");
-    setTimeout(location.reload.bind(location), 1000);
+    setTimeout(location.reload.bind(location), 1200);
   });
   // button click unhides form #developmentType
   $("#startButton").click(function(event){
     $("#developmentType").show();
+    $("#choosingStatement").hide();
+    $("#startButton").hide();
   });
 });
