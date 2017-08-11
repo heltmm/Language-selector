@@ -25,7 +25,7 @@ $(document).ready(function() {
       $("#javascript").show();
     }
   });
-
+  //Targeting form #backSize if a change is made to a radio button #ruby or #backInstitution will display
   $("#backSize").change(function(event){
     event.preventDefault();
     var size = $("input:radio[name=size]:checked").val();
@@ -40,7 +40,7 @@ $(document).ready(function() {
       $("#backSize").hide();
     }
   });
-
+  //Targeting form #backInstitution if a change is made to a radio button #php or #backCorpChoice will display
   $("#backInstitution").change(function(event){
     event.preventDefault();
     var institution = $("input:radio[name=institution]:checked").val();
@@ -56,7 +56,7 @@ $(document).ready(function() {
 
     }
   });
-
+  //Targeting form #backCorpChoice if a change is made to a box option #java or #cSharp will display
   $("#backCorpChoice").change(function(event){
     event.preventDefault();
     var company = $("#backCorp").val();
