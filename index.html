@@ -19,6 +19,7 @@
         <div class="col-md-10">
           <img src="img/prog-languages.png" alt="picture of many programing languages"/>
           <h3>Choosing a programing language can seem like a daunting choice.  There are many many languages out there that cater to what develper you want to be.  Fill out this form to figure out what language is best for you!</h3>
+
           <form id="developmentType">
             <h3>The first thing to decide is do you like prefer to work on front-end or back-end developement.  Front-end develpment is the part of the app that the user interacts with.  Back-end developement takes data the user inputs and manipulates it.</h3
             <div class="form-group">
@@ -35,13 +36,29 @@
               </div>
             </div>
           </form>
-          <form id="frontEnd">
-            <h1>Front end Showing</h1>
-          </form>
-          <form id="backEnd">
-            <h1>Back End Showing</h1>
-          </form>
 
+          <div id="frontEnd">
+            <form id="frontChoice">
+              <h3>Do you enjoy designing and styling to create a beautiful app? Or adding interactive elements that add some pizaaz to your app?</h3>
+              <select id="frontLanguage">
+                <option></option>
+                <option value="design">Design</option>
+                <option value="interactive">Interactive Elements</option>
+              </select>
+            </form>
+            <div id="css">
+              <h1>css</h1>
+            </div>
+            <div id="javascript">
+              <h1>Javascript</h1>
+            </div>
+          </div>
+
+          <div id="backEnd">
+            <form id="backChoice">
+              <h1>Back End Showing</h1>
+            </form>
+          </div>
         </div>
         <div class="col-md-1">
         </div>

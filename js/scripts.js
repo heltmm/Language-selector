@@ -2,7 +2,6 @@ $(document).ready(function() {
   $("#developmentType").change(function(event){
     event.preventDefault();
     var developement = $("input:radio[name=development]:checked").val();
-    console.log(developement)
     if (developement === "front-end"){
       $("#frontEnd").show();
       $("#backEnd").hide();
@@ -10,6 +9,17 @@ $(document).ready(function() {
       $("#backEnd").show();
       $("#frontEnd").hide();
     }
-
   })
+  $("#frontChoice").change(function(event){
+    event.preventDefault();
+    var frontLanguage = $("#frontLanguage").val();
+    console.log(frontLanguage)
+    if (frontLanguage === "design"){
+      $("#css").show();
+      $("#javascript").hide();
+    }else if (frontLanguage === "interactive"){
+      $("#css").hide();
+      $("#javascript").show();
+    }
+  });
 });
