@@ -33,8 +33,6 @@ $(document).ready(function() {
       $('#ruby').siblings().hide()
       $('#ruby').parents().siblings().hide();
       $("#ruby").show();
-
-
     }else if (size === "large"){
       $("#backInstitution").show();
       $("#backSize").hide();
@@ -48,33 +46,25 @@ $(document).ready(function() {
       $('#php').siblings().hide()
       $('#php').parents().siblings().hide();
       $("#php").show();
-
-
     }else if (institution === "private"){
       $("#backCorpChoice").show();
       $("#backInstitution").hide();
-
     }
   });
   //Targeting form #backCorpChoice if a change is made to a box option #java or #cSharp will display
   $("#backCorpChoice").change(function(event){
     event.preventDefault();
     var company = $("#backCorp").val();
-
     if (company === "google"){
       $('#java').siblings().hide()
       $('#java').parents().siblings().hide();
       $("#java").show();
-
     }else if (company === "microsoft"){
       $('#cSharp').siblings().hide()
       $('#cSharp').parents().siblings().hide();
       $("#cSharp").show();
     }
   });
-
-
-
   // button click hinges language information then refreshes page
   $(".clickDrop").click(function(event){
     $("#frontEnd").addClass("animated hinge");
@@ -87,13 +77,19 @@ $(document).ready(function() {
     $("#choosingStatement").hide();
     $("#startButton").hide();
   });
+  //submit event for #name form to save nameInput and append to .nameIsert spans
   $("#name").submit(function(event){
     event.preventDefault();
     var name = $("#nameInput").val();
-    console.log(name)
+    if (name === ""){
+      alert("Please enter a name!")
+      $("#name").show();
+      $("#choosingStatement").hide();
+
+    }else {
     $(".nameInsert").append(name)
     $("#developmentType").show();
     $("#name").hide();
-    $()
+  }
   });
 });

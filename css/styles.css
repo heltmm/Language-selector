@@ -10,9 +10,11 @@
   width: 100%;
   padding-top: 50px;
 }
+
 #developmentType, #frontEnd, #backEnd, #css, #javascript, #ruby, #cSharp, #php, #java, #backInstitution, #backCorpChoice, #name{
   display: none;
 }
+
 .radio{
   display: block;
 }
@@ -21,21 +23,14 @@
   width: 50%;
 }
 
-.language {
-  text-align: center;
-}
-.form-group {
-  text-align: center;
-}
-
 #imgRow img{
   width: 5%;
   display: inline-block;;
   margin: 0px 4% 0px 4%;
 }
+
 #imgRow {
   width: 100%;
-  text-align: center;
 }
 
 #startButton{
