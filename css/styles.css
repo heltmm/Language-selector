@@ -4,9 +4,7 @@
   font-family: sans-serif;
   text-align: center;
   font-size: 50px;
-}
-#header p{
-  padding: 10px
+  padding-bottom: 1px;
 }
 .col-md-10 img {
   width: 100%;
