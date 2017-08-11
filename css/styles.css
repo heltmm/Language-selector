@@ -1,0 +1,15 @@
+#header {
+  background-color: #0f2344;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 100px;
+  font-size: 50px;
+}
+.col-md-10 img {
+  width: 100%;
+  padding-top: 50px;
+}
+.col-md-10 {
+  
+}
