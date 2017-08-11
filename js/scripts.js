@@ -22,4 +22,9 @@ $(document).ready(function() {
       $("#javascript").show();
     }
   });
+  $(".clickDrop").click(function(event){
+    $("#frontEnd").addClass("animated hinge");
+    $("#backEnd").addClass("animated hinge");
+    setTimeout(location.reload.bind(location), 1000);
+  })
 });
