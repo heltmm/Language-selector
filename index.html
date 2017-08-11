@@ -9,18 +9,29 @@
     <title>Track Suggester</title>
   </head>
   <body>
+    <!-- Header Bar -->
     <div id="header">
+      <div id="imgRow">
+        <img src="img/csharp.png" alt="c# logo" />
+        <img src="img/css.png" alt="css logo" />
+        <img src="img/java.png" alt="java logo" />
+        <img src="img/javascript.png" alt="javascript logo" />
+        <img src="img/php.png" alt="php logo" />
+        <img src="img/ruby.png" alt="ruby logo" />
+      </div>
       <p>What Programing Language Should I Learn?</p>
     </div>
     <div class="container">
 
+      <!-- Main content -->
       <div class="row">
+        <!-- Buffer column-->
         <div class="col-md-1">
         </div>
         <div class="col-md-10">
           <img src="img/prog-languages.png" alt="picture of many programing languages"/>
           <h3>Choosing a programing language can seem like a daunting choice.  There are many many languages out there that cater to what develper you want to be.  Fill out this form to figure out what language is best for you!</h3>
-
+          <!-- form to choose development type, base on choice page will display front or back end -->
           <form id="developmentType">
             <h3>The first thing to decide is do you like prefer to work on front-end or back-end developement.  Front-end develpment is the part of the app that the user interacts with.  Back-end developement takes data the user inputs and manipulates it.</h3>
             <div class="form-group">
@@ -37,7 +48,7 @@
               </div>
             </div>
           </form>
-
+          <!-- hidden front end information, shown after user selects front end -->
           <div id="frontEnd">
             <form id="frontChoice">
               <h3>Do you enjoy designing and styling to create a beautiful app? Or adding interactive elements that add some pizaaz to your app?</h3>
@@ -62,13 +73,14 @@
               <button type="submit" class="btn btn-danger clickDrop">Click Here</button>
             </div>
           </div>
-
+          <!-- hidden back end information, shown after user selects back end -->
           <div id="backEnd">
             <form id="backChoice">
               <h1>Back End Showing</h1>
             </form>
           </div>
         </div>
+        <!-- Buffer column-->
         <div class="col-md-1">
         </div>
       </div>

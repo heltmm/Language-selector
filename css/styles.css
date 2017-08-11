@@ -3,8 +3,10 @@
   color: white;
   font-family: sans-serif;
   text-align: center;
-  padding: 100px;
   font-size: 50px;
+}
+#header p{
+  padding: 10px
 }
 .col-md-10 img {
   width: 100%;
@@ -25,5 +27,15 @@
   text-align: center;
 }
 .form-group {
+  text-align: center;
+}
+
+#imgRow img{
+  width: 5%;
+  display: inline-block;;
+  margin: 0px 4% 0px 4%;
+}
+#imgRow {
+  width: 100%;
   text-align: center;
 }
