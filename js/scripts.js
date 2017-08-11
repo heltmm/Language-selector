@@ -83,8 +83,17 @@ $(document).ready(function() {
   });
   // button click unhides form #developmentType
   $("#startButton").click(function(event){
-    $("#developmentType").show();
+    $("#name").show();
     $("#choosingStatement").hide();
     $("#startButton").hide();
+  });
+  $("#name").submit(function(event){
+    event.preventDefault();
+    var name = $("#nameInput").val();
+    console.log(name)
+    $(".nameInsert").append(name)
+    $("#developmentType").show();
+    $("#name").hide();
+    $()
   });
 });
