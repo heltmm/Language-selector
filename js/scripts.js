@@ -4,9 +4,11 @@ $(document).ready(function() {
     var developement = $("input:radio[name=development]:checked").val();
     console.log(developement)
     if (developement === "front-end"){
-      location.href = "frontend.html";
+      $("#frontEnd").show();
+      $("#backEnd").hide();
     }else if (developement === "back-end"){
-      location.href = "backend.html"
+      $("#backEnd").show();
+      $("#frontEnd").hide();
     }
 
   })
