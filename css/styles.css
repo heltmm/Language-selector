@@ -16,3 +16,14 @@
 .radio{
   display: block;
 }
+
+.language img{
+  width: 50%;
+}
+
+.language {
+  text-align: center;
+}
+.form-group {
+  text-align: center;
+}
