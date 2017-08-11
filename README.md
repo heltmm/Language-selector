@@ -11,8 +11,8 @@ _This is a webpage for prospective programers that asks questions about the pros
 ## Setup
 
 * _Open Web Browser._
-* _type https://heltmm.github.io/track-suggester into url bar._
-* _Or click this link: [Track Selector](https://heltmm.github.io/track-suggester)_
+* _type https://heltmm.github.io/language-selector into url bar._
+* _Or click this link: [Track Selector](https://heltmm.github.io/language-selector)_
 
 ## Known Bugs
 
