@@ -5,10 +5,10 @@ $(document).ready(function() {
     var developement = $("input:radio[name=development]:checked").val();
     if (developement === "front-end"){
       $("#frontEnd").show();
-      $("#backEnd").hide();
+      $("#developmentType").hide();
     }else if (developement === "back-end"){
       $("#backEnd").show();
-      $("#frontEnd").hide();
+      $("#developmentType").hide();
     }
   })
   //Targeting form #frontChoice if a change is made to a box option #css or #javascript will display
@@ -37,6 +37,7 @@ $(document).ready(function() {
 
     }else if (size === "large"){
       $("#backInstitution").show();
+      $("#backSize").hide();
     }
   });
 
@@ -51,6 +52,7 @@ $(document).ready(function() {
 
     }else if (institution === "private"){
       $("#backCorpChoice").show();
+      $("#backInstitution").hide();
 
     }
   });
