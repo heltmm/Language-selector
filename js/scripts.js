@@ -68,4 +68,8 @@ $(document).ready(function() {
     $("#backEnd").addClass("animated hinge");
     setTimeout(location.reload.bind(location), 1000);
   });
+  // button click unhides form #developmentType
+  $("#startButton").click(function(event){
+    $("#developmentType").show();
+  });
 });

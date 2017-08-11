@@ -6,11 +6,11 @@
   font-size: 50px;
   padding-bottom: 1px;
 }
-.col-md-10 img {
+.col-lg-10 img {
   width: 100%;
   padding-top: 50px;
 }
-#frontEnd, #backEnd, #css, #javascript, #ruby, #cSharp, #php, #java, #backInstitution, #backCorpChoice{
+#developmentType, #frontEnd, #backEnd, #css, #javascript, #ruby, #cSharp, #php, #java, #backInstitution, #backCorpChoice{
   display: none;
 }
 .radio{
@@ -36,4 +36,10 @@
 #imgRow {
   width: 100%;
   text-align: center;
+}
+body {
+  background-color: #f2e8d5;
+}
+#startButton{
+  margin: 50px 0 10px 0;
 }
