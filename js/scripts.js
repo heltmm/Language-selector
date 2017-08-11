@@ -4,10 +4,10 @@ $(document).ready(function() {
     event.preventDefault();
     var developement = $("input:radio[name=development]:checked").val();
     if (developement === "front-end"){
-      $("#frontEnd").show();
+      $("#frontEnd").fadeIn();
       $("#developmentType").hide();
     }else if (developement === "back-end"){
-      $("#backEnd").show();
+      $("#backEnd").fadeIn();
       $("#developmentType").hide();
     }
   })
@@ -18,11 +18,11 @@ $(document).ready(function() {
     if (frontLanguage === "design"){
       $('#css').siblings().hide()
       $('#css').parents().siblings().hide();
-      $("#css").show();
+      $("#css").fadeIn();
     }else if (frontLanguage === "interactive"){
       $('#javascript').siblings().hide()
       $('#javascript').parents().siblings().hide();
-      $("#javascript").show();
+      $("#javascript").fadeIn();
     }
   });
   //Targeting form #backSize if a change is made to a radio button #ruby or #backInstitution will display
@@ -32,9 +32,9 @@ $(document).ready(function() {
     if (size === "small"){
       $('#ruby').siblings().hide()
       $('#ruby').parents().siblings().hide();
-      $("#ruby").show();
+      $("#ruby").fadeIn();
     }else if (size === "large"){
-      $("#backInstitution").show();
+      $("#backInstitution").fadeIn();
       $("#backSize").hide();
     }
   });
@@ -45,9 +45,9 @@ $(document).ready(function() {
     if (institution === "government"){
       $('#php').siblings().hide()
       $('#php').parents().siblings().hide();
-      $("#php").show();
+      $("#php").fadeIn();
     }else if (institution === "private"){
-      $("#backCorpChoice").show();
+      $("#backCorpChoice").fadeIn();
       $("#backInstitution").hide();
     }
   });
@@ -58,11 +58,11 @@ $(document).ready(function() {
     if (company === "google"){
       $('#java').siblings().hide()
       $('#java').parents().siblings().hide();
-      $("#java").show();
+      $("#java").fadeIn();
     }else if (company === "microsoft"){
       $('#cSharp').siblings().hide()
       $('#cSharp').parents().siblings().hide();
-      $("#cSharp").show();
+      $("#cSharp").fadeIn();
     }
   });
   // button click hinges language information then refreshes page
@@ -71,9 +71,9 @@ $(document).ready(function() {
     $("#backEnd").addClass("animated hinge");
     setTimeout(location.reload.bind(location), 1200);
   });
-  // button click unhides form #developmentType
+  // button click unhides form #name
   $("#startButton").click(function(event){
-    $("#name").show();
+    $("#name").fadeIn();
     $("#choosingStatement").hide();
     $("#startButton").hide();
   });
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
     }else {
     $(".nameInsert").append(name)
-    $("#developmentType").show();
+    $("#developmentType").fadeIn();
     $("#name").hide();
   }
   });
