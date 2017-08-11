@@ -52,7 +52,6 @@ $(document).ready(function() {
     var company = $("#backCorp").val();
 
     if (company === "google"){
-      alert("dd")
       $("#java").show();
       $("#cSharp").hide();
     }else if (company === "microsoft"){
