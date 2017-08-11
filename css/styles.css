@@ -10,7 +10,7 @@
   width: 100%;
   padding-top: 50px;
 }
-#frontEnd, #backEnd, #css, #javascript{
+#frontEnd, #backEnd, #css, #javascript, #ruby, #cSharp, #php, #java, #backInstitution, #backCorpChoice{
   display: none;
 }
 .radio{
