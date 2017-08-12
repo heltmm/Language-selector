@@ -81,8 +81,13 @@ $(document).ready(function() {
   $("#name").submit(function(event){
     event.preventDefault();
     var name = $("#nameInput").val();
-    if (name === "" || !name.match(/^[a-zA-Z]+$/)){
+    if (name === "" ){
       alert("Please enter a name!")
+      $("#name").show();
+      $("#choosingStatement").hide();
+
+    }else if ( !name.match(/^[a-zA-Z ]+$/) ){
+      alert("Please please use only letters and spaces!")
       $("#name").show();
       $("#choosingStatement").hide();
 
