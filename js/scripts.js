@@ -67,8 +67,7 @@ $(document).ready(function() {
   });
   // button click hinges language information then refreshes page
   $(".clickDrop").click(function(event){
-    $("#frontEnd").addClass("animated hinge");
-    $("#backEnd").addClass("animated hinge");
+    $(".language").addClass("animated hinge");
     setTimeout(location.reload.bind(location), 1200);
   });
   // button click unhides form #name
